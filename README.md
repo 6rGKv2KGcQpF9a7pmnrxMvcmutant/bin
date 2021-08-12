@@ -11,7 +11,7 @@ adapt any of these scripts for your own use.
 ## [agb_funcs.py](agb_funcs.py)
 
 This file has helper functions for
-[auto_genbookmarks.py](auto_gen_bookmarks.py). Each of the
+[auto_gen_bookmarks.py](auto_gen_bookmarks.py). Each of the
 three functions has docstrings, and you can see those for information on
 the functions.
 
