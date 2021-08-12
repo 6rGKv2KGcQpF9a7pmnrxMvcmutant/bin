@@ -6,6 +6,25 @@ from selenium.webdriver import Firefox
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
 
+# TODO add some argparse magic to control where the screenshot gets made
+# import argparse
+# def parse_commandline():
+#     parser = argparse.ArgumentParser()
+#     parser.add_argument(
+#         "-s",
+#         "--longer",
+#         dest="ex_arg",  # optional, would default to args.longer
+#         help="The help text.",
+#     )
+#     parser.add_argument(
+#         "-b",
+#         "--bool_flag",
+#         action="store_true",
+#         dest="ex_arg2",  # optional, would default to args.bool_flag
+#         help="help text",
+#     )
+#     return parser.parse_args()
+
 
 def get_creds(id_: str):
     """Function to get login information for an account using Bitwarden CLI."""
@@ -17,6 +36,8 @@ def get_creds(id_: str):
 
 
 def main():
+    # FIXME refactor so that the nested functions are no longer nested,
+    # parameterize the driver, and then return it when they're done
     def login(user, passwd):
         ## first log in
         sleep(2)
@@ -46,6 +67,7 @@ def main():
         return (sem_1_tbl, sem_2_tbl)
 
     def get_sched_ss(classes: str, ss_fname):
+        # FIXME fix this func so that it refreshes after entering in a set of classes
         entry_box = driver.find_element_by_xpath("//textarea[@id='powerschool-entry']")
         entry_box.send_keys(classes)
         update_btn = driver.find_element_by_xpath("//button[1]")
