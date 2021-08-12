@@ -1,0 +1,56 @@
+name_of_organization = "Organization name here"
+name_of_opportunity = "Opportunity name here"
+# opts for below are:
+#   External Service
+#   Internal Service
+#   Out of State/Country service
+category_of_need = "Need category here"
+start_time = "11:00 PM"
+start_date = 2021-08-10
+# the next 2 must be integers
+duration_hrs = 1
+duration_mins = 0
+coordinator_first_and_last_name = "Name here"
+coordinator_email_address = "Email here"
+coordinator_mobile_phone_number = "phone number here"
+
+msg_to_coordinator = """
+Description to be passed to your coordinator"""
+
+service_performed = """
+Description here"""
+
+# opts for below are:
+#   AFFORDABLE AND CLEAN ENERGY
+#   CLEAN WATER AND SANITATION
+#   CLIMATE ACTION
+#   DECENT WORK AND ECONOMIC GROWTH
+#   GENDER EQUALITY
+#   GOOD HEALTH AND WELL-BEING
+#   INDUSTRY, INNOVATION AND INFRASTRUCTURE
+#   LIFE BELOW WATER
+#   LIFE ON LAND
+#   NO POVERTY
+#   NURSING HOME HEALTH CARE
+#   PARTNERSHIPS FOR THE GOALS
+#   PEACE, JUSTICE AND STRONG INSTITUTIONS
+#   QUALITY EDUCATION
+#   REDUCED INEQUALITIES
+#   RESPONSIBLE CONSUMPTION AND PRODUCTION
+#   SUSTAINABLE CITIES AND COMMUNITIES
+#   ZERO HUNGER
+#   ZERO WORLD HUNGER
+service_category_type = "limited options"
+
+how_did_service = """
+how your service fulfilled the need of org or community"""
+
+what_learned_while = """
+what you learned while performing service"""
+
+###############################################################################
+#                               Commitment details                            #
+###############################################################################
+# Please, reflect on this experience
+reflection = """
+Reflection on the service you did"""

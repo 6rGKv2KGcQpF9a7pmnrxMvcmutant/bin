@@ -1,0 +1,73 @@
+# search for <\+\+> and then use cgn
+name_of_organization = "<++>"
+
+###############################################################################
+#                          What did you do?                                   #
+###############################################################################
+name_of_opportunity = "<++>"
+# opts for below are:
+#   External Service
+#   Internal Service
+#   Out of State/Country service
+category_of_need = "<++>"
+
+###############################################################################
+#                      When did you attend?                                   #
+###############################################################################
+start_time = "11:00 PM"
+# example for below would be 2021-08-10
+start_date = <++>
+# the next 2 must be integers
+duration_hrs = <++>
+duration_mins = <++>
+
+###############################################################################
+#              Who can validate attendance?                                   #
+###############################################################################
+coordinator_first_and_last_name = "<++>"
+coordinator_email_address = "<++>"
+coordinator_mobile_phone_number = "<++>"
+# MESSAGE TO COORDINATOR (PLEASE DESCRIBE)
+msg_to_coordinator = """
+<++>"""
+
+###############################################################################
+#             What service did you perform?                                   #
+###############################################################################
+# WHAT SERVICE DID YOU PERFORM?
+service_performed = """
+<++>"""
+# opts for below are:
+#   AFFORDABLE AND CLEAN ENERGY
+#   CLEAN WATER AND SANITATION
+#   CLIMATE ACTION
+#   DECENT WORK AND ECONOMIC GROWTH
+#   GENDER EQUALITY
+#   GOOD HEALTH AND WELL-BEING
+#   INDUSTRY, INNOVATION AND INFRASTRUCTURE
+#   LIFE BELOW WATER
+#   LIFE ON LAND
+#   NO POVERTY
+#   NURSING HOME HEALTH CARE
+#   PARTNERSHIPS FOR THE GOALS
+#   PEACE, JUSTICE AND STRONG INSTITUTIONS
+#   QUALITY EDUCATION
+#   REDUCED INEQUALITIES
+#   RESPONSIBLE CONSUMPTION AND PRODUCTION
+#   SUSTAINABLE CITIES AND COMMUNITIES
+#   ZERO HUNGER
+#   ZERO WORLD HUNGER
+service_category_type = "<++>"
+# HOW DID YOUR SERVICE FULFILL THE NEED OF THE ORGANIZATION OR COMMUNITY?
+how_did_service = """
+<++>"""
+# WHAT DID YOU LEARN WHILE PERFORMING THIS SERVICE?
+what_learned_while = """
+<++>"""
+
+###############################################################################
+#                               Commitment details                            #
+###############################################################################
+# Please, reflect on this experience
+reflection = """
+<++>"""
