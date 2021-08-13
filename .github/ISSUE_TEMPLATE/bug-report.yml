@@ -1,0 +1,87 @@
+# need to know:
+#   what lang (py, jl, hs) [required] d
+#   script [required] d
+#   platform [required] d
+#   bug description [required] d
+#       what was expected [required] d
+#       what happened [required] d
+#   logging
+#   text of err msg
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: [bug, triage]
+assignees:
+  - 6rGKv2KGcQpF9a7pmnrxMvcmutant
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: dropdown
+    id: lang
+    attributes:
+      label: Language
+      description: What language was the script/program written in?
+      options:
+        - Python (.py)
+        - Julia (.jl)
+        - Haskell (.hs)
+    validations:
+      required: true
+  - type: input
+    id: file
+    attributes:
+      label: Script or program
+      description: What script/program is this bug for?
+      placeholder: a file name (ie get_sched_ss.py)
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: What platform/system are you on?
+      options:
+        - Linux or BSD
+        - macOS
+        - Windows
+    validations:
+      required: true
+  - type: textarea
+    id: what-was-expected
+    attributes:
+      label: What did you expect to happen?
+      description: |
+        Please tell us what you expected to happen before you discovered the bug.
+      placeholder: Expected outcome
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: |
+        Please tell us what happened, as in the bug you encountered. Be as descriptive as possible.
+      placeholder: Actual outcome
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: textarea
+    id: err-msg
+    attributes:
+      label: Relevant text of error message
+      description: Please copy and paste any relevant error messages (eg tracebacks, python errors, etc.).
