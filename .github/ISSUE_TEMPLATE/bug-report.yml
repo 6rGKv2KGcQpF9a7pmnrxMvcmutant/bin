@@ -1,12 +1,4 @@
-# need to know:
-#   what lang (py, jl, hs) [required] d
-#   script [required] d
-#   platform [required] d
-#   bug description [required] d
-#       what was expected [required] d
-#       what happened [required] d
-#   logging
-#   text of err msg
+# -*- mode: conf; -*-
 name: Bug Report
 description: File a bug report
 title: "[Bug]: "
