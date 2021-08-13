@@ -1,6 +1,6 @@
 # -*- mode: conf; -*-
 name: Feature Request
-description: File a bug report
+description: File a feature request
 title: "[Feature request]: "
 labels: [feature]
 assignees:
@@ -18,6 +18,14 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: false
+  - type: input
+    id: file
+    attributes:
+      label: Script or program
+      description: What script/program is this bug for?
+      placeholder: a file name (ie get_sched_ss.py)
+    validations:
+      required: true
   - type: textarea
     id: problem
     attributes:
