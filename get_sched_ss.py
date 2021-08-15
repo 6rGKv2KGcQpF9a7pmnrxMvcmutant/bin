@@ -1,3 +1,4 @@
+import argparse
 import json
 import re
 from time import sleep
@@ -7,23 +8,17 @@ from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
 
 # TODO add some argparse magic to control where the screenshot gets made
-# import argparse
-# def parse_commandline():
-#     parser = argparse.ArgumentParser()
-#     parser.add_argument(
-#         "-s",
-#         "--longer",
-#         dest="ex_arg",  # optional, would default to args.longer
-#         help="The help text.",
-#     )
-#     parser.add_argument(
-#         "-b",
-#         "--bool_flag",
-#         action="store_true",
-#         dest="ex_arg2",  # optional, would default to args.bool_flag
-#         help="help text",
-#     )
-#     return parser.parse_args()
+def parse_commandline():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-v", "--verbose", help="The help text.", action="store_true")
+    parser.add_argument(
+        "-V",
+        "--verbose_sendto",
+        dest="verbose_file",  # optional, would default to args.bool_flag
+        help="help text",
+    )
+    parser.add_argument()
+    return parser.parse_args()
 
 
 def get_creds(id_: str):
@@ -87,6 +82,7 @@ def main():
         classes_s1, classes_s2 = get_tbls()
         driver.get(moe_url)
         get_sched_ss(classes_s1, "semester-1-sched.png")
+        driver.get(moe_url)
         get_sched_ss(classes_s2, "semester-2-sched.png")
 
 
